@@ -1,5 +1,5 @@
 {
-  "Version": 76,
+  "Version": 77,
   "Individuals": [
     {
       "Name": "European (P-gp modified, CYP3A4 36 h)",
@@ -88,12 +88,22 @@
           },
           "Parameters": [
             {
+              "Name": "Reference concentration",
+              "Value": 4.32,
+              "Unit": "µmol/l"
+            },
+            {
               "Name": "t1/2 (liver)",
               "Value": 36.0,
               "Unit": "h",
               "ValueOrigin": {
                 "Source": "Unknown"
               }
+            },
+            {
+              "Name": "t1/2 (intestine)",
+              "Value": 23.0,
+              "Unit": "h"
             }
           ]
         },
@@ -203,6 +213,23 @@
             {
               "Name": "ColonSigmoid",
               "Value": 0.00010384615385
+            }
+          ],
+          "Parameters": [
+            {
+              "Name": "Reference concentration",
+              "Value": 1.0,
+              "Unit": "µmol/l"
+            },
+            {
+              "Name": "t1/2 (liver)",
+              "Value": 36.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "t1/2 (intestine)",
+              "Value": 23.0,
+              "Unit": "h"
             }
           ]
         },
@@ -592,6 +619,16 @@
               "ValueOrigin": {
                 "Source": "Unknown"
               }
+            },
+            {
+              "Name": "t1/2 (liver)",
+              "Value": 36.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "t1/2 (intestine)",
+              "Value": 23.0,
+              "Unit": "h"
             }
           ]
         },
@@ -634,6 +671,23 @@
               "Name": "Muscle",
               "MembraneLocation": "Basolateral",
               "Value": 0.00064682539683
+            }
+          ],
+          "Parameters": [
+            {
+              "Name": "Reference concentration",
+              "Value": 1.0,
+              "Unit": "µmol/l"
+            },
+            {
+              "Name": "t1/2 (liver)",
+              "Value": 36.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "t1/2 (intestine)",
+              "Value": 23.0,
+              "Unit": "h"
             }
           ]
         },
@@ -749,6 +803,16 @@
               "ValueOrigin": {
                 "Source": "Unknown"
               }
+            },
+            {
+              "Name": "t1/2 (liver)",
+              "Value": 36.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "t1/2 (intestine)",
+              "Value": 23.0,
+              "Unit": "h"
             }
           ]
         },
@@ -779,6 +843,16 @@
               "ValueOrigin": {
                 "Source": "Unknown"
               }
+            },
+            {
+              "Name": "t1/2 (liver)",
+              "Value": 36.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "t1/2 (intestine)",
+              "Value": 23.0,
+              "Unit": "h"
             }
           ]
         },
@@ -802,6 +876,16 @@
               "ValueOrigin": {
                 "Source": "Unknown"
               }
+            },
+            {
+              "Name": "t1/2 (liver)",
+              "Value": 36.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "t1/2 (intestine)",
+              "Value": 23.0,
+              "Unit": "h"
             }
           ]
         }
@@ -2029,31 +2113,12 @@
             },
             {
               "Name": "End time",
-              "Value": 2.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "Resolution",
-              "Value": 20.0,
-              "Unit": "pts/h"
-            }
-          ]
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 2.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "End time",
               "Value": 24.0,
               "Unit": "h"
             },
             {
               "Name": "Resolution",
-              "Value": 4.0,
+              "Value": 20.0,
               "Unit": "pts/h"
             }
           ]
@@ -2352,34 +2417,12 @@
             },
             {
               "Name": "End time",
-              "Value": 2.0,
+              "Value": 24.0,
               "Unit": "h"
             },
             {
               "Name": "Resolution",
               "Value": 20.0,
-              "Unit": "pts/h"
-            }
-          ]
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 2.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "End time",
-              "Value": 17.0,
-              "Unit": "h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            },
-            {
-              "Name": "Resolution",
-              "Value": 4.0,
               "Unit": "pts/h"
             }
           ]
@@ -2627,7 +2670,8 @@
               "MetaboliteName": "Keto-Itraconazole"
             },
             {
-              "Name": "Glomerular Filtration-GFR"
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
             }
           ]
         },
@@ -2658,7 +2702,8 @@
               "MetaboliteName": "Hydroxy-Itraconazole"
             },
             {
-              "Name": "Glomerular Filtration-GFR"
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
             }
           ],
           "Protocol": {
@@ -2684,7 +2729,8 @@
               "MetaboliteName": "N-desalkyl-Itraconazole"
             },
             {
-              "Name": "Glomerular Filtration-GFR"
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
             }
           ]
         },
@@ -2700,7 +2746,8 @@
               "MoleculeName": "CYP3A4"
             },
             {
-              "Name": "Glomerular Filtration-GFR"
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
             }
           ]
         }
@@ -2822,34 +2869,12 @@
             },
             {
               "Name": "End time",
-              "Value": 2.0,
+              "Value": 18.0,
               "Unit": "h"
             },
             {
               "Name": "Resolution",
               "Value": 20.0,
-              "Unit": "pts/h"
-            }
-          ]
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 2.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "End time",
-              "Value": 8.0,
-              "Unit": "h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            },
-            {
-              "Name": "Resolution",
-              "Value": 4.0,
               "Unit": "pts/h"
             }
           ]
@@ -3176,7 +3201,7 @@
             },
             {
               "Name": "End time",
-              "Value": 76.0,
+              "Value": 91.0,
               "Unit": "h",
               "ValueOrigin": {
                 "Source": "Unknown"
@@ -3189,31 +3214,6 @@
               "ValueOrigin": {
                 "Source": "Unknown"
               }
-            }
-          ]
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 76.0,
-              "Unit": "h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            },
-            {
-              "Name": "End time",
-              "Value": 91.0,
-              "Unit": "h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            },
-            {
-              "Name": "Resolution",
-              "Value": 4.0,
-              "Unit": "pts/h"
             }
           ]
         }
@@ -3475,7 +3475,8 @@
               "MetaboliteName": "Keto-Itraconazole"
             },
             {
-              "Name": "Glomerular Filtration-GFR"
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
             }
           ]
         },
@@ -3506,7 +3507,8 @@
               "MetaboliteName": "Hydroxy-Itraconazole"
             },
             {
-              "Name": "Glomerular Filtration-GFR"
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
             }
           ],
           "Protocol": {
@@ -3532,7 +3534,8 @@
               "MetaboliteName": "N-desalkyl-Itraconazole"
             },
             {
-              "Name": "Glomerular Filtration-GFR"
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
             }
           ]
         },
@@ -3548,7 +3551,8 @@
               "MoleculeName": "CYP3A4"
             },
             {
-              "Name": "Glomerular Filtration-GFR"
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
             }
           ]
         }
@@ -3563,8 +3567,6 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "Min": 70.51979,
-              "Max": 86.5106,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
@@ -3576,8 +3578,6 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "Min": 0.000101754486,
-              "Max": 0.441264838,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
@@ -3677,34 +3677,12 @@
             },
             {
               "Name": "End time",
-              "Value": 2.0,
+              "Value": 36.0,
               "Unit": "h"
             },
             {
               "Name": "Resolution",
               "Value": 20.0,
-              "Unit": "pts/h"
-            }
-          ]
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 2.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "End time",
-              "Value": 30.0,
-              "Unit": "h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            },
-            {
-              "Name": "Resolution",
-              "Value": 4.0,
               "Unit": "pts/h"
             }
           ]
@@ -3952,7 +3930,8 @@
               "MetaboliteName": "Keto-Itraconazole"
             },
             {
-              "Name": "Glomerular Filtration-GFR"
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
             }
           ]
         },
@@ -3983,7 +3962,8 @@
               "MetaboliteName": "Hydroxy-Itraconazole"
             },
             {
-              "Name": "Glomerular Filtration-GFR"
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
             }
           ],
           "Protocol": {
@@ -4009,7 +3989,8 @@
               "MetaboliteName": "N-desalkyl-Itraconazole"
             },
             {
-              "Name": "Glomerular Filtration-GFR"
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
             }
           ]
         },
@@ -4025,7 +4006,8 @@
               "MoleculeName": "CYP3A4"
             },
             {
-              "Name": "Glomerular Filtration-GFR"
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
             }
           ]
         }
@@ -4144,31 +4126,12 @@
             },
             {
               "Name": "End time",
-              "Value": 2.0,
+              "Value": 27.0,
               "Unit": "h"
             },
             {
               "Name": "Resolution",
               "Value": 20.0,
-              "Unit": "pts/h"
-            }
-          ]
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 2.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "End time",
-              "Value": 24.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "Resolution",
-              "Value": 4.0,
               "Unit": "pts/h"
             }
           ]
@@ -4416,7 +4379,8 @@
               "MetaboliteName": "Keto-Itraconazole"
             },
             {
-              "Name": "Glomerular Filtration-GFR"
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
             }
           ]
         },
@@ -4447,7 +4411,8 @@
               "MetaboliteName": "Hydroxy-Itraconazole"
             },
             {
-              "Name": "Glomerular Filtration-GFR"
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
             }
           ],
           "Protocol": {
@@ -4473,7 +4438,8 @@
               "MetaboliteName": "N-desalkyl-Itraconazole"
             },
             {
-              "Name": "Glomerular Filtration-GFR"
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
             }
           ]
         },
@@ -4489,7 +4455,8 @@
               "MoleculeName": "CYP3A4"
             },
             {
-              "Name": "Glomerular Filtration-GFR"
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
             }
           ]
         }
@@ -4621,34 +4588,12 @@
             },
             {
               "Name": "End time",
-              "Value": 2.0,
+              "Value": 48.0,
               "Unit": "h"
             },
             {
               "Name": "Resolution",
               "Value": 20.0,
-              "Unit": "pts/h"
-            }
-          ]
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 2.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "End time",
-              "Value": 42.0,
-              "Unit": "h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            },
-            {
-              "Name": "Resolution",
-              "Value": 4.0,
               "Unit": "pts/h"
             }
           ]
@@ -4896,7 +4841,8 @@
               "MetaboliteName": "Keto-Itraconazole"
             },
             {
-              "Name": "Glomerular Filtration-GFR"
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
             }
           ]
         },
@@ -4927,7 +4873,8 @@
               "MetaboliteName": "Hydroxy-Itraconazole"
             },
             {
-              "Name": "Glomerular Filtration-GFR"
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
             }
           ],
           "Protocol": {
@@ -4953,7 +4900,8 @@
               "MetaboliteName": "N-desalkyl-Itraconazole"
             },
             {
-              "Name": "Glomerular Filtration-GFR"
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
             }
           ]
         },
@@ -4969,7 +4917,8 @@
               "MoleculeName": "CYP3A4"
             },
             {
-              "Name": "Glomerular Filtration-GFR"
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
             }
           ]
         }
@@ -6800,20 +6749,20 @@
             "LLOQ": 2E-10
           },
           "Values": [
-            0.9069855,
-            2.252821,
-            4.974153,
-            7.79754639,
-            10.2996,
-            10.75015,
-            11.46319,
-            10.2996,
-            10.18994,
-            9.974119,
-            8.678475
+            0.000906985544,
+            0.002252821,
+            0.004974153,
+            0.00779754668,
+            0.0102996,
+            0.01075015,
+            0.01146319,
+            0.0102996,
+            0.01018994,
+            0.009974119,
+            0.008678475
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "µg/l"
+          "Unit": "mg/l"
         }
       ],
       "BaseGrid": {
@@ -6936,20 +6885,20 @@
             "LLOQ": 2E-10
           },
           "Values": [
-            0.3012533,
-            1.501671,
-            2.830003,
-            3.038172,
-            2.901079,
-            3.042413,
-            3.11893,
-            3.160002,
-            2.717148,
-            2.62683,
-            2.286845
+            0.0003012533,
+            0.001501671,
+            0.00283000316,
+            0.003038172,
+            0.002901079,
+            0.003042413,
+            0.00311893,
+            0.003160002,
+            0.002717148,
+            0.00262683,
+            0.002286845
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "µg/l"
+          "Unit": "mg/l"
         }
       ],
       "BaseGrid": {
@@ -7072,20 +7021,20 @@
             "LLOQ": 2E-10
           },
           "Values": [
-            1.707595,
-            2.515449,
-            2.863468,
-            2.799002,
-            2.735988,
-            2.706018,
-            2.438528,
-            2.330045,
-            2.781708,
-            2.689298,
-            1.499704
+            0.001707595,
+            0.002515449,
+            0.002863468,
+            0.002799002,
+            0.00273598777,
+            0.002706018,
+            0.002438528,
+            0.002330045,
+            0.002781708,
+            0.002689298,
+            0.00149970409
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "µg/l"
+          "Unit": "mg/l"
         }
       ],
       "BaseGrid": {
@@ -7208,21 +7157,21 @@
             "LLOQ": 2E-10
           },
           "Values": [
-            0.3942779,
-            1.791594,
-            2.585012,
-            3.014627,
-            3.198267,
-            3.086782,
-            3.086782,
-            3.515641,
-            3.68595,
-            2.875336,
-            2.875336,
-            2.494905
+            0.0003942779,
+            0.001791594,
+            0.002585012,
+            0.003014627,
+            0.003198267,
+            0.00308678183,
+            0.00308678183,
+            0.003515641,
+            0.00368595,
+            0.002875336,
+            0.002875336,
+            0.002494905
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "µg/l"
+          "Unit": "mg/l"
         }
       ],
       "BaseGrid": {
@@ -7346,20 +7295,20 @@
             "LLOQ": 2E-10
           },
           "Values": [
-            0.5945867,
-            1.70836,
-            2.487681,
-            2.54842,
-            3.00505,
-            3.757264,
-            3.425584,
-            3.55313,
-            3.772848,
-            2.785465,
-            1.686047
+            0.000594586658,
+            0.00170836,
+            0.00248768087,
+            0.00254841987,
+            0.00300505,
+            0.00375726377,
+            0.003425584,
+            0.00355313,
+            0.00377284782,
+            0.002785465,
+            0.001686047
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "µg/l"
+          "Unit": "mg/l"
         }
       ],
       "BaseGrid": {
@@ -7482,20 +7431,20 @@
             "LLOQ": 2E-10
           },
           "Values": [
-            0.5629213,
-            1.296886,
-            2.227877,
-            2.364259,
-            2.393813,
-            2.48136,
-            2.398748,
-            2.061857,
-            2.016766,
-            2.092005,
-            1.178839
+            0.0005629213,
+            0.00129688589,
+            0.002227877,
+            0.002364259,
+            0.00239381287,
+            0.00248136,
+            0.002398748,
+            0.002061857,
+            0.002016766,
+            0.002092005,
+            0.00117883889
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "µg/l"
+          "Unit": "mg/l"
         }
       ],
       "BaseGrid": {
@@ -7618,20 +7567,20 @@
             "LLOQ": 2E-10
           },
           "Values": [
-            0.2006146,
-            0.2006146,
-            1.191806,
-            1.97957289,
-            2.690394,
-            2.820429,
-            3.613563,
-            2.566355,
-            2.820429,
-            2.566355,
-            1.294432
+            0.00020061461,
+            0.00020061461,
+            0.00119180593,
+            0.001979573,
+            0.002690394,
+            0.002820429,
+            0.003613563,
+            0.00256635481,
+            0.002820429,
+            0.00256635481,
+            0.001294432
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "µg/l"
+          "Unit": "mg/l"
         }
       ],
       "BaseGrid": {
@@ -7754,20 +7703,20 @@
             "LLOQ": 2E-10
           },
           "Values": [
-            1.701139,
-            3.416512,
-            3.671962,
-            3.267726,
-            3.553984,
-            2.981321,
-            2.990129,
-            2.760438,
-            2.609788,
-            2.55592,
-            1.406039
+            0.001701139,
+            0.003416512,
+            0.003671962,
+            0.003267726,
+            0.003553984,
+            0.00298132119,
+            0.002990129,
+            0.00276043778,
+            0.002609788,
+            0.00255591981,
+            0.001406039
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "µg/l"
+          "Unit": "mg/l"
         }
       ],
       "BaseGrid": {
@@ -7890,20 +7839,20 @@
             "LLOQ": 2E-10
           },
           "Values": [
-            0.7825516,
-            1.476753,
-            2.393057,
-            2.890998,
-            3.216506,
-            3.07228,
-            3.303176,
-            2.808061,
-            2.716736,
-            2.690322,
-            1.799539
+            0.0007825516,
+            0.00147675292,
+            0.002393057,
+            0.0028909978,
+            0.003216506,
+            0.00307228,
+            0.003303176,
+            0.002808061,
+            0.00271673617,
+            0.002690322,
+            0.001799539
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "µg/l"
+          "Unit": "mg/l"
         }
       ],
       "BaseGrid": {
